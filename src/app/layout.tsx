@@ -8,6 +8,7 @@ import { Inter, Source_Code_Pro } from "next/font/google";
 import { Background, Flex } from "@/once-ui/components";
 import { effects, style } from "./resources";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -75,6 +76,7 @@ export default function RootLayout({
             {children}
           </Flex>
         </Flex>
+        <Footer />
       </Flex>
     </Flex>
   );
