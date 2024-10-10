@@ -25,7 +25,7 @@ const Footer = () => {
                 <IconButton
                   key={`${index}-${item.name}`}
                   href={item.link}
-                  icon={item.link}
+                  icon={item.icon}
                   tooltip={item.name}
                   size="s"
                   variant="ghost"
