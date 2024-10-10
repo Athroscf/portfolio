@@ -1,3 +1,10 @@
+import {
+  EnvelopeOpenIcon,
+  GitHubLogoIcon,
+  LinkedInLogoIcon,
+  TwitterLogoIcon,
+} from "@radix-ui/react-icons";
+
 const person = {
   firstname: "Christopher",
   lastname: "Fiallos",
@@ -10,4 +17,27 @@ const person = {
   languages: ["English", "Spanish"],
 };
 
-export { person };
+const social = [
+  {
+    name: "GitHub",
+    icon: GitHubLogoIcon,
+    link: "https://github.com/athroscf",
+  },
+  {
+    name: "LinkedIn",
+    icon: LinkedInLogoIcon,
+    link: "https://www.linkedin.com/in/christopher-fiallos/",
+  },
+  {
+    name: "X",
+    icon: TwitterLogoIcon,
+    link: "https://x.com/ChrisFiallos10",
+  },
+  {
+    name: "Email",
+    icon: EnvelopeOpenIcon,
+    link: "mailto:fialloschris1@gmail.com",
+  },
+];
+
+export { person, social };

@@ -70,7 +70,11 @@ export default function RootLayout({
         <Background gradient={effects.gradient} dots={effects.dots} lines={effects.lines} />
         <Flex fillWidth minHeight="16"></Flex>
         <Header />
-        {children}
+        <Flex zIndex={0} fillWidth paddingY="l" paddingX="l" justifyContent="center" flex={1}>
+          <Flex justifyContent="center" fillHeight minHeight="0">
+            {children}
+          </Flex>
+        </Flex>
       </Flex>
     </Flex>
   );
