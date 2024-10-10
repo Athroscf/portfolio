@@ -2,32 +2,32 @@ import { Avatar, Button, Flex, Heading, RevealFx, Text } from "@/once-ui/compone
 import { about, baseURL, home, person } from "./resources";
 
 export function generateMetadata() {
-	const title = home.title;
-	const description = home.description;
-	const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
+  const title = home.title;
+  const description = home.description;
+  const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
 
-	return {
-		title,
-		description,
-		openGraph: {
-			title,
-			description,
-			type: 'website',
-			url: `https://${baseURL}`,
-			images: [
-				{
-					url: ogImage,
-					alt: title,
-				},
-			],
-		},
-		twitter: {
-			card: 'summary_large_image',
-			title,
-			description,
-			images: [ogImage],
-		},
-	};
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      url: `https://${baseURL}`,
+      images: [
+        {
+          url: ogImage,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
+    },
+  };
 }
 
 export default function Home() {
@@ -46,27 +46,27 @@ export default function Home() {
             </Text>
           </RevealFx>
           <RevealFx translateY="12" delay={0.4}>
-							<Button
-								data-border="rounded"
-								href="/about"
-								variant="tertiary"
-								suffixIcon="chevronRight"
-								size="m">
-								<Flex
-									gap="8"
-									alignItems="center">
-									{about.avatar.display && (
-										<Avatar
-											style={{marginLeft: '-0.75rem', marginRight: '0.25rem'}}
-											src={person.avatar}
-											size="m"/>
-										)}
-										About me
-								</Flex>
-							</Button>
-						</RevealFx>
+            <Button
+              data-border="rounded"
+              href="/about"
+              variant="tertiary"
+              suffixIcon="chevronRight"
+              size="m"
+            >
+              <Flex gap="8" alignItems="center">
+                {about.avatar.display && (
+                  <Avatar
+                    style={{ marginLeft: "-0.75rem", marginRight: "0.25rem" }}
+                    src={person.avatar}
+                    size="m"
+                  />
+                )}
+                About me
+              </Flex>
+            </Button>
+          </RevealFx>
         </Flex>
       </Flex>
     </Flex>
   );
-};
+}
