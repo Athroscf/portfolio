@@ -1,33 +1,9 @@
 import { Avatar, Button, Flex, Heading, RevealFx, Text } from "@/once-ui/components";
 import { about, baseURL, home, person } from "./resources";
+import { generateMetadata as gM } from "./lib/metadata";
 
-export function generateMetadata() {
-  const title = home.title;
-  const description = home.description;
-  const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: "website",
-      url: `https://${baseURL}`,
-      images: [
-        {
-          url: ogImage,
-          alt: title,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [ogImage],
-    },
-  };
+export async function generateMetadata() {
+  return gM({ baseUrl: baseURL, home });
 }
 
 export default function Home() {
