@@ -3,6 +3,7 @@
 import { Flex, ToggleButton } from "@/once-ui/components";
 import { usePathname } from "next/navigation";
 import { display, person, routes } from "../resources";
+import TimeDisplay from "./TimeDisplay";
 
 import styles from "./Header.module.scss";
 
@@ -72,6 +73,16 @@ const Header = () => {
             </ToggleButton>
           )}
         </Flex>
+      </Flex>
+      <Flex
+        hide="s"
+        paddingRight="12"
+        fillWidth
+        justifyContent="flex-end"
+        alignItems="center"
+        textVariant="body-default-s"
+      >
+        {display.time && <TimeDisplay timeZone={person.location} />}
       </Flex>
     </Flex>
   );

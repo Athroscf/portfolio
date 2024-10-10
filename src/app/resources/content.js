@@ -6,7 +6,7 @@ const person = {
   },
   role: "Fullstack Developer | Cloud Engineer",
   avatar: "",
-  location: "Honduras",
+  location: "CST",
   languages: ["Englsih", "Spanish"],
 };
 
