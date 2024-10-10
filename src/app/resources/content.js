@@ -1,10 +1,3 @@
-import {
-  EnvelopeOpenIcon,
-  GitHubLogoIcon,
-  LinkedInLogoIcon,
-  TwitterLogoIcon,
-} from "@radix-ui/react-icons";
-
 const person = {
   firstname: "Christopher",
   lastname: "Fiallos",
