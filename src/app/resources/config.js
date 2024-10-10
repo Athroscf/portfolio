@@ -1,3 +1,5 @@
+const baseURL = 'nextjs-portfolio.up.railway.app'
+
 const display = {
   location: true,
   time: true,
@@ -29,4 +31,4 @@ const style = {
   transition: "all", // all | micro | macro
 };
 
-export { display, effects, routes, style };
+export { baseURL, display, effects, routes, style };
