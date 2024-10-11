@@ -54,24 +54,6 @@ const Header = () => {
               </Flex>
             </ToggleButton>
           )}
-          {routes["/blog"] && (
-            <ToggleButton prefixIcon="book" href="/blog" selected={pathname.startsWith("/blog")}>
-              <Flex paddingX="2" hide="s">
-                Blog
-              </Flex>
-            </ToggleButton>
-          )}
-          {routes["/gallery"] && (
-            <ToggleButton
-              prefixIcon="gallery"
-              href="/gallery"
-              selected={pathname.startsWith("/gallery")}
-            >
-              <Flex paddingX="2" hide="s">
-                Gallery
-              </Flex>
-            </ToggleButton>
-          )}
         </Flex>
       </Flex>
       <Flex
