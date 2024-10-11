@@ -14,7 +14,7 @@ export type IHome = {
   description: string;
   headline: React.ReactNode;
   subline: React.ReactNode;
-}
+};
 
 export type ISocialLink = {
   name: string;
@@ -45,39 +45,39 @@ export type IAbout = {
   work: {
     display: boolean;
     title: string;
-    experiences: Array<{
+    experiences: {
       company: string;
       timeframe: string;
       role: string;
       achievements: React.ReactNode[];
-      images: Array<{
+      images: {
         src: string;
         alt: string;
         width: number;
         height: number;
-      }>;
-    }>;
+      }[];
+    }[];
   };
   studies: {
     display: boolean;
     title: string;
-    institutions: Array<{
+    institutions: {
       name: string;
       description: React.ReactNode;
-    }>;
+    }[];
   };
   technical: {
     display: boolean;
     title: string;
-    skills: Array<{
+    skills: {
       title: string;
       description?: React.ReactNode;
-      images?: Array<{
+      images?: {
         src: string;
         alt: string;
         width: number;
         height: number;
-      }>;
-    }>;
+      }[];
+    }[];
   };
 };

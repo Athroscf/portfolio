@@ -30,9 +30,8 @@ const about: IAbout = {
   intro: {
     display: true,
     title: "Introduction",
-    description: (
-      "With over four years of experience in IT and software development, I specialize in cloud engineering, software development, and IT management. I've successfully led projects that boosted team efficiency by 20% and improved product reliability by 30%. My technical skills span AWS, Docker, Kubernetes, React, and Python, while I also bring a strong background in youth coaching, fostering teamwork and growth. Currently, I’m focused on advancing my expertise in cloud technologies and leveraging my diverse skill set to drive impactful solutions."
-    ),
+    description:
+      "With over four years of experience in IT and software development, I specialize in cloud engineering, software development, and IT management. I've successfully led projects that boosted team efficiency by 20% and improved product reliability by 30%. My technical skills span AWS, Docker, Kubernetes, React, and Python, while I also bring a strong background in youth coaching, fostering teamwork and growth. Currently, I’m focused on advancing my expertise in cloud technologies and leveraging my diverse skill set to drive impactful solutions.",
   },
   work: {
     display: true, // set to false to hide this section
@@ -43,8 +42,8 @@ const about: IAbout = {
         timeframe: "2022 - 2023",
         role: "Software Developer",
         achievements: [
-            "Resolved 20 software bugs in two weeks, reducing user complaints by 30% and significantly increasing overall product reliability.",
-            "Developed six new features, enhancing user satisfaction and boosting app usage by 20%, contributing to an improved user experience."
+          "Resolved 20 software bugs in two weeks, reducing user complaints by 30% and significantly increasing overall product reliability.",
+          "Developed six new features, enhancing user satisfaction and boosting app usage by 20%, contributing to an improved user experience.",
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -61,8 +60,8 @@ const about: IAbout = {
         timeframe: "2021 - 2022",
         role: "IT Manager",
         achievements: [
-            "Reduced call handling costs by 50% through PBX system optimization, enhancing communication efficiency across the hotel.",
-            "Implemented table management software, decreasing manual errors by 30% and boosting customer satisfaction in bar operations."
+          "Reduced call handling costs by 50% through PBX system optimization, enhancing communication efficiency across the hotel.",
+          "Implemented table management software, decreasing manual errors by 30% and boosting customer satisfaction in bar operations.",
         ],
         images: [],
       },
